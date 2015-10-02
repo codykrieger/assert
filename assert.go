@@ -13,7 +13,7 @@ func Assert(cond bool) {
 
 	_, file, line, ok := runtime.Caller(1)
 	if ok {
-		panic(fmt.Sprintf("ASSERT: Condition not met at %s:%d", file, line))
+		panic(fmt.Sprintf("ASSERT: Condition not met at %s:%d.", file, line))
 	}
 
 	panic("ASSERT: Condition not met.")
