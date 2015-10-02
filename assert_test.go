@@ -7,7 +7,6 @@ import (
 )
 
 func TestThatItPanicsOnFalseConditions(t *testing.T) {
-	Assert(false)
 	assert.Panics(t, func() {
 		Assert(false)
 	}, "Calling Assert() with a false condition should panic.")
